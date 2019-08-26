@@ -2,9 +2,52 @@
 <html>
 <head>
 	<title>First File </title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<h1>This is first project</h1>
-	<p>Hello World</p>
+	<nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand mr-auto" href="index.html">My Site</a>
+			<div class="collapse navbar-collapse" id="Navbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<header class="jumbotron">
+		<div class="row row-header">
+			<h1>HighLighted Heading</h1>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6">
+				<h1>This is first project</h1>	
+			</div>
+			<div class="col-12 col-sm">
+				<p>Hello World</p>	
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
