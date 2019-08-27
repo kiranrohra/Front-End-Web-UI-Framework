@@ -28,7 +28,7 @@
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa-fa-address-card fa-lg"></span> Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -41,7 +41,11 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-3 align-self-center">
+                	<img src="img/logo.png">
+                </div>
+                <div class="col-12 col-sm-3 align-self-center">
+                	<a href="#reserve_table" class="btn btn-warning btn-sm btn-block"> Reserve Table </a>
                 </div>
             </div>
         </div>
@@ -73,8 +77,13 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+            	<div class="media">            		
+            		<div class="media-body">
+            			<h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                		<p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>	
+            		</div>
+            		<img src="img/buffet.png" class="d-flex mr-3 img-thumbnail align-self-center">
+            	</div>
             </div>
         </div>
 
@@ -98,6 +107,63 @@
                 </div>
             </div>
         </div>
+
+        <section id="reserve_table">
+        	<div class="row row-content align-items-center">
+	        	<div class="col-12 col-sm-8 offset-sm-2">
+	        		<div class="card">
+		        		<h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+		        		<div class="card-body">
+		        			<form>
+		        				<div class="form-group row">
+		        					<label for="no_of_guests" class="col-md-2 col-form-label"><b>Number of Guests</b></label>
+			                        <div class="col-1 form-check">
+			                            <input class="form-check-input" type="radio" name="no_of_guests" id="no_of_guests_1" value="1">
+			                            <label class="form-check-label" for="no_of_guests_1">1</label>
+			                        </div>
+			                        <div class="col-1 form-check">
+			                        	<input class="form-check-input" type="radio" name="no_of_guests" id="no_of_guests_2" value="2">
+			                            <label class="form-check-label" for="no_of_guests_2">2</label>
+			                        </div>    
+			                        <div class="col-1 form-check">
+			                        	<input class="form-check-input" type="radio" name="no_of_guests" id="no_of_guests_3" value="3">
+			                            <label class="form-check-label" for="no_of_guests_3">3</label>
+			                        </div>
+			                        <div class="col-1 form-check">
+			                        	<input class="form-check-input" type="radio" name="no_of_guests" id="no_of_guests_4" value="4">
+			                            <label class="form-check-label" for="no_of_guests_4">4</label>
+			                        </div>
+			                        <div class="col-1 form-check">
+			                        	<input class="form-check-input" type="radio" name="no_of_guests" id="no_of_guests_5" value="5">
+			                            <label class="form-check-label" for="no_of_guests_5">5</label>
+			                        </div>
+			                        <div class="col-1 form-check">
+			                        	<input class="form-check-input" type="radio" name="no_of_guests" id="no_of_guests_6" value="6">
+			                            <label class="form-check-label" for="no_of_guests_6">6</label>
+			                        </div>
+		        				</div>
+
+		        				<div class="form-group row">
+		        					<label for="datetime" class="col-md-2 col-form-label"><b>Date &amp; Time</b></label>
+			                        <div class="col-md-3">
+			                            <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+			                        </div>
+			                        <div class="col-md-3">
+			                            <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+			                        </div>
+		        				</div>
+
+		        				<div class="form-group row">
+		        					<div class="col-md-10 offset-md-2">
+		        						<button type="submit" class="btn btn-primary">Reserve</button>
+		        					</div>
+		        				</div>
+		        			</form>
+		        		</div>
+		        	</div>
+	        	</div>
+	        </div>
+        </section>
     </div>
 
     <footer class="footer">
